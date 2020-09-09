@@ -73,7 +73,7 @@
 
 hive --service cli --help 查看
 
-
+```sql
 --hive直接执行sql命令，可以写一个sql语句，也可以使用;分割写多个sql语句
 	hive -e ""
 --hive执行sql命令，将sql语句执行的结果重定向到某一个文件中
