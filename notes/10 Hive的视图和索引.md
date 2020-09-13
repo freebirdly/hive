@@ -54,6 +54,9 @@ LATERAL VIEW explode(address) myTable2 AS myCol2, myCol3;
 
 ##### 	2、hive基本操作
 
+如果数据量小，建立索引反而没有直接在mysql查找块。mysql的索引是B+树，在数据量小时比查找索引表可能更快。
+
+
 ```sql
 --创建索引：
 	create index t1_index on table psn2(name) 
