@@ -147,6 +147,9 @@ set hive.merge.mapredfiles=true;
 set hive.merge.size.per.task=256*1000*1000
 ```
 
+去重：count distrinct需要一个reduce task完成，数据量可能过大，可以先groupby再count。
+
+
 ### 10、合理设置Map以及Reduce的数量
 
 ```sql
